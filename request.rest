@@ -1,0 +1,37 @@
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/3
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "nama": "Angger",
+    "umur": "20",
+    "nim": "351507",
+    "alamat": "Perum TNI AL",
+    "prodi": "Teknik Komputer"
+}
+
+###
+PATCH http://localhost:5000/users/3
+Content-Type: application/json
+
+{
+    "nama": "Fajar",
+    "umur": "22",
+    "nik": "351507",
+    "alamat": "Perum TNI AL",
+    "status": "Teknik Industri"
+}
+
+###
+DELETE http://localhost:5000/users/1
+
+###
+POST http://localhost:5000/feedbacks
+
+###
+GET 
