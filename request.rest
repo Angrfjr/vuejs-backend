@@ -1,37 +1,33 @@
-GET http://localhost:5000/users
+GET http://localhost:5000/makanan
 
 ###
-GET http://localhost:5000/users/3
+GET http://localhost:5000/users/6
 
 ###
-POST http://localhost:5000/users
+POST http://localhost:5000/makanan
 Content-Type: application/json
 
 {
     "nama": "Angger",
-    "umur": "20",
-    "nim": "351507",
-    "alamat": "Perum TNI AL",
-    "prodi": "Teknik Komputer"
+    "image": "https://cdn.discordapp.com/attachments/1133593391301677187/1133593631207477338/coca.png",
+    "harga": "4.500"
 }
 
 ###
-PATCH http://localhost:5000/users/3
+PATCH http://localhost:5000/users/6
 Content-Type: application/json
 
 {
     "nama": "Fajar",
-    "umur": "22",
-    "nik": "351507",
-    "alamat": "Perum TNI AL",
-    "status": "Teknik Industri"
+    "harga": "10000",
+    "image": "351507"
 }
 
 ###
-DELETE http://localhost:5000/users/1
+DELETE http://localhost:5000/users/6
 
 ###
 POST http://localhost:5000/feedbacks
 
 ###
-GET 
+GET http://localhost:5000/search?nama=Aqua
